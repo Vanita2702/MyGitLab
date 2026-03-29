@@ -20,5 +20,11 @@ jobs:
       - name: Install pytest
         run: pip install pytest
 
+      - name: Greetings before test
+        run: echo "Hello, World! Running tests now..."
+
       - name: Run tests
         run: pytest
+
+      - name: Greetings after test
+        run: echo "Tests completed! Have a great day!"
